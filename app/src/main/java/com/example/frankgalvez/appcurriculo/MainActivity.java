@@ -1,5 +1,6 @@
 package com.example.frankgalvez.appcurriculo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -40,6 +41,12 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
+
+
+
     }
 
     @Override
@@ -81,7 +88,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.info_pessoais) {
-            // Handle the camera action
+            // Instancia a nova activity e abre ela
+            Intent intent = new Intent(getApplicationContext(), InfoPessoaisActivity.class);
+            startActivity(intent);
         } else if (id == R.id.formacao) {
 
         } else if (id == R.id.exp_profissional) {
