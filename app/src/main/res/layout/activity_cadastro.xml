@@ -6,4 +6,24 @@
     android:layout_height="match_parent"
     tools:context="com.example.frankgalvez.appcurriculo.CadastroActivity">
 
+            <TextView
+                android:id="@+id/id_txtNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtNome"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="111dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite Aqui"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+
 </android.support.constraint.ConstraintLayout>

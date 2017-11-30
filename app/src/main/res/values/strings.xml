@@ -6,4 +6,5 @@
     <string name="label_inicial">Bem Vindo ao App!</string>
     <string name="tituloInfoPessoaisActivity">Informações Pessoais</string>
     <string name="bt_cadastrar">Cadastrar CV</string>
+    <string name="txtNome">Digite seu nome completo</string>
 </resources>
