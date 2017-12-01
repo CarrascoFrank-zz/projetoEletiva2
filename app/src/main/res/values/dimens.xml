@@ -6,5 +6,6 @@
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="TitulosTamanho">20sp</dimen>
+    <dimen name="TxtTamanhoPadrao">16sp</dimen>
 
 </resources>

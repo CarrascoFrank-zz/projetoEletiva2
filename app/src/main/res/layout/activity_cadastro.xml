@@ -6,24 +6,156 @@
     android:layout_height="match_parent"
     tools:context="com.example.frankgalvez.appcurriculo.CadastroActivity">
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
             <TextView
-                android:id="@+id/id_txtNome"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/lb_txtNome"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="35dp"
                 android:text="@string/txtNome"
-                android:textAlignment="center"
-                tools:layout_editor_absoluteX="111dp"
-                tools:layout_editor_absoluteY="16dp"
-                tools:ignore="MissingConstraints" />
+                android:textSize="@dimen/TxtTamanhoPadrao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginLeft="8dp" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/lb_txtEstado"
+                tools:layout_editor_absoluteX="85dp" />
+
+            <EditText
+                android:id="@+id/id_editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/lb_txtNome"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/lb_txtEndereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtEndereco"
+                android:textSize="@dimen/TxtTamanhoPadrao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_editTextName"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/editText5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
                 android:ems="10"
-                android:hint="Digite Aqui"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                app:layout_constraintTop_toBottomOf="@+id/lb_txtEndereco" />
+
+            <TextView
+                android:id="@+id/lb_txtEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtEstado"
+                android:textSize="@dimen/TxtTamanhoPadrao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+            <TextView
+                android:id="@+id/lb_txtCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtCidade"
+                android:textSize="@dimen/TxtTamanhoPadrao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText6"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/lb_txtCidade"
+                tools:layout_editor_absoluteX="61dp" />
+
+            <TextView
+                android:id="@+id/lb_txtTelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtTelefone"
+                android:textSize="@dimen/TxtTamanhoPadrao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText7"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="phone"
+                app:layout_constraintTop_toBottomOf="@+id/lb_txtTelefone"
+                tools:layout_editor_absoluteX="67dp" />
+
+            <TextView
+                android:id="@+id/lb_txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtEmail"
+                android:textSize="@dimen/TxtTamanhoPadrao"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lb_txtEmail"
+                tools:layout_editor_absoluteX="105dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>
