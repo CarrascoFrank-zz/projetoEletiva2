@@ -12,4 +12,5 @@
     <string name="txtCidade">Cidade:</string>
     <string name="txtTelefone">Telefone:</string>
     <string name="txtEmail">E-mail:</string>
+    <string name="bt_gravar">Cadastrar</string>
 </resources>
