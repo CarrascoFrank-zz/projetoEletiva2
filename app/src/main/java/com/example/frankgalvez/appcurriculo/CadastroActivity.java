@@ -62,7 +62,19 @@ public class CadastroActivity extends AppCompatActivity {
                     editor.putString("cidade", editTextCidade.getText().toString());
                     editor.putString("telefone", editTextTelefone.getText().toString());
                     editor.putString("email", editTextEmail.getText().toString());
+                    editor.commit();
+
+                    Toast.makeText(getApplicationContext(), "Dados Salvos ! ", Toast.LENGTH_LONG).show();
+
+                    editTextnome.setText(editTextnome.getText().toString());
+                    editTextEndereco.setText(editTextEndereco.getText().toString());
+                    editTextEstado.setText(editTextEstado.getText().toString());
+                    editTextCidade.setText(editTextCidade.getText().toString());
+                    editTextTelefone.setText(editTextTelefone.getText().toString());
+                    editTextEmail.setText(editTextEmail.getText().toString());
                 }
+
+
             }
         });
 
@@ -71,11 +83,24 @@ public class CadastroActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
         if(sharedPreferences.contains("nome")){
 
-            String nome = sharedPreferences.getString("nome", "usuario nao definido");
-
+            String nome = sharedPreferences.getString("nome", "nome nao definido");
+            editTextnome.setText(nome);
+            String endereco = sharedPreferences.getString("endereco","nome nao definido");
+            editTextEndereco.setText(endereco);
+            String estado = sharedPreferences.getString("estado","nome nao definido");
+            editTextEstado.setText(estado);
+            String cidade = sharedPreferences.getString("cidade","nome nao definido");
+            editTextCidade.setText(cidade);
+            String telefone = sharedPreferences.getString("telefone","nome nao definido");
+            editTextTelefone.setText(telefone);
+            String email = sharedPreferences.getString("email","nome nao definido");
+            editTextEmail.setText(email);
 
         }else{
             //retorno caso ele nao tenha o nome no sharedpreference
+
+            Toast.makeText(getApplicationContext(), "dados nao encontrados", Toast.LENGTH_LONG).show();
+
         }
 
 
