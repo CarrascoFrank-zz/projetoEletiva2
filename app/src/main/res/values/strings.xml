@@ -13,4 +13,5 @@
     <string name="txtTelefone">Telefone:</string>
     <string name="txtEmail">E-mail:</string>
     <string name="bt_gravar">Cadastrar</string>
+    <string name="SQLite">Aqui a activity puxa os dados com SQLite</string>
 </resources>
